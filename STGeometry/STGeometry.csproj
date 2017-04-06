@@ -66,13 +66,16 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="stgeometry105\linux\postgres\9.5\st_geometry.so" />
     <None Include="stgeometry\linux\postgres\9.4\st_geometry.so" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Dockerfile" />
+    <None Include="Dockerfile">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="pg94\" />
