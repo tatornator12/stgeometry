@@ -94,6 +94,8 @@ RUN echo "listen_addresses='*'" >> /etc/postgresql/9.5/main/postgresql.conf
 #RUN sudo chmod 777 /usr/lib/postgresql/9.5/lib/
 USER root
 RUN sudo cp /myapp/STGeometry/stgeometry105/linux/postgres/9.5/st_geometry.so /usr/lib/postgresql/9.5/lib/
+RUN sudo cp /myapp/STGeometry/stgeometry105/linux/postgres/9.5/libst_raster_pg.so /usr/lib/postgresql/9.5/lib/
+RUN sudo cp /myapp/STGeometry/stgeometry105/linux/postgres/9.5/PGSQLEngine.so /usr/lib/postgresql/9.5/lib/
 USER postgres
 
 
